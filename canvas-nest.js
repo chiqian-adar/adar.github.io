@@ -20,7 +20,7 @@
       script = scripts[script_len - 1]; //当前加载的script
     return {
       l: script_len, //长度，用于生成id用
-      z: get_attribute(script, "zIndex", -1), //z-index
+      z: get_attribute(script, "zIndex", 0 ), //z-index
       o: get_attribute(script, "opacity", 0.5), //opacity
       c: get_attribute(script, "color", "0,0,0"), //color
       n: get_attribute(script, "count", 99) //count
@@ -28,7 +28,7 @@
   }
   //设置canvas的高宽
   function set_canvas_size() {
-    canvas_width = the_canvas.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth, 
+    canvas_width = the_canvas.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
     canvas_height = the_canvas.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
   }
 
@@ -39,9 +39,9 @@
     var e, i, d, x_dist, y_dist, dist; //临时节点
     //遍历处理每一个点
     random_points.forEach(function(r, idx) {
-      r.x += r.xa, 
+      r.x += r.xa,
       r.y += r.ya, //移动
-      r.xa *= r.x > canvas_width || r.x < 0 ? -1 : 1, 
+      r.xa *= r.x > canvas_width || r.x < 0 ? -1 : 1,
       r.ya *= r.y > canvas_height || r.y < 0 ? -1 : 1, //碰到边界，反向反弹
       context.fillRect(r.x - 0.5, r.y - 0.5, 1, 1); //绘制一个宽高为1的点
       //从下一个点开始
@@ -69,10 +69,10 @@
   var the_canvas = document.createElement("canvas"), //画布
     config = get_config_option(), //配置
     canvas_id = "c_n" + config.l, //canvas id
-    context = the_canvas.getContext("2d"), canvas_width, canvas_height, 
+    context = the_canvas.getContext("2d"), canvas_width, canvas_height,
     frame_func = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(func) {
       window.setTimeout(func, 1000 / 45);
-    }, random = Math.random, 
+    }, random = Math.random,
     current_point = {
       x: null, //当前鼠标x
       y: null, //当前鼠标y
@@ -80,7 +80,7 @@
     },
     all_array;
   the_canvas.id = canvas_id;
-  the_canvas.style.cssText = "position:fixed;top:0;left:0;z-index:" + config.z + ";opacity:" + config.o;
+  the_canvas.style.cssText = "position:fixed;top:0;left:0;pointer-events:none;z-index:" + config.z + ";opacity:" + config.o;
   get_by_tagname("body")[0].appendChild(the_canvas);
 
   //初始化画布大小
