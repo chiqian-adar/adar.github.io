@@ -174,17 +174,16 @@
       
         <h2 id="Flex布局是什么？"><a href="#Flex布局是什么？" class="headerlink" title="Flex布局是什么？"></a>Flex布局是什么？</h2><p>flex布局是W3C提出的一种新的布局方式，其与传统的布局相比具有更大的灵活性。利用flex布局，元素可以在各个方向上进行布局且能够自适应大小，更主要的是代码简单啊！！！<br>不过这是有兼容性的。。。<br>以下是各浏览器对flex布局的支持</p>
 <p><img src="http://ombuy6inc.bkt.clouddn.com/flex1" alt="此处输入图片的描述"></p>
-<p>##基本概念<br><img src="http://ombuy6inc.bkt.clouddn.com/flex2" alt="此处输入图片的描述"></p>
-<p>####弹性容器(Flex container)<br>包含着弹性项目的父元素。通过设置 display 属性的值为 flex 或 inline-flex 来定义弹性容器。</p>
-<p>####弹性项目(Flex item)<br>弹性容器的每个子元素都称为弹性项目。</p>
-<p>####轴(Axis)</p>
-<ul>
+<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p><img src="http://ombuy6inc.bkt.clouddn.com/flex2" alt="此处输入图片的描述"></p>
+<p>&lt;–more–&gt;</p>
+<h4 id="弹性容器-Flex-container"><a href="#弹性容器-Flex-container" class="headerlink" title="弹性容器(Flex container)"></a>弹性容器(Flex container)</h4><p>包含着弹性项目的父元素。通过设置 display 属性的值为 flex 或 inline-flex 来定义弹性容器。</p>
+<h4 id="弹性项目-Flex-item"><a href="#弹性项目-Flex-item" class="headerlink" title="弹性项目(Flex item)"></a>弹性项目(Flex item)</h4><p>弹性容器的每个子元素都称为弹性项目。</p>
+<h4 id="轴-Axis"><a href="#轴-Axis" class="headerlink" title="轴(Axis)"></a>轴(Axis)</h4><ul>
 <li>主轴(main axis)</li>
 <li>侧轴(cross axis)</li>
 </ul>
 <p>单个项目占据的主轴空间叫做 主轴尺寸(main size)，占据的交叉轴空间叫做 侧轴尺寸(cross size)</p>
-<p>##容器属性</p>
-<blockquote>
+<h2 id="容器属性"><a href="#容器属性" class="headerlink" title="容器属性"></a>容器属性</h2><blockquote>
 <ul>
 <li>flex-direction</li>
 <li>flex-wrap</li>
@@ -194,8 +193,7 @@
 <li>align-content</li>
 </ul>
 </blockquote>
-<p>###flex-direction </p>
-<blockquote>
+<h3 id="flex-direction"><a href="#flex-direction" class="headerlink" title="flex-direction"></a>flex-direction</h3><blockquote>
 <p>决定主轴方向<br>flex-direction: row | row-reverse | column column-reverse;</p>
 <ul>
 <li>row（默认）：主轴为水平方向，起点在左端。</li>
@@ -206,20 +204,17 @@
 </blockquote>
 <p><img src="http://ombuy6inc.bkt.clouddn.com/flex3" alt="此处输入图片的描述"></p>
 <p><img src="http://ombuy6inc.bkt.clouddn.com/flex4" alt="此处输入图片的描述"></p>
-<p>###flex-wrap</p>
-<blockquote>
+<h3 id="flex-wrap"><a href="#flex-wrap" class="headerlink" title="flex-wrap"></a>flex-wrap</h3><blockquote>
 <p>项目的换行<br>flex-wrap: nowrap | wrap | wrap-reverse;</p>
 <p>nowrap: (默认)不换行<br>wrap: 可以多行，第一行在上方<br>wrap-reverse: 可以多行，第一行在下方</p>
 </blockquote>
-<p>####nowrap<br><img src="http://ombuy6inc.bkt.clouddn.com/flex9" alt="此处输入图片的描述"></p>
-<p>####wrap<br><img src="http://ombuy6inc.bkt.clouddn.com/flex8" alt="此处输入图片的描述"></p>
-<p>####wrap-reverse<br><img src="http://ombuy6inc.bkt.clouddn.com/flex7" alt="此处输入图片的描述"></p>
-<p>###flex-flow</p>
-<blockquote>
+<h4 id="nowrap"><a href="#nowrap" class="headerlink" title="nowrap"></a>nowrap</h4><p><img src="http://ombuy6inc.bkt.clouddn.com/flex9" alt="此处输入图片的描述"></p>
+<h4 id="wrap"><a href="#wrap" class="headerlink" title="wrap"></a>wrap</h4><p><img src="http://ombuy6inc.bkt.clouddn.com/flex8" alt="此处输入图片的描述"></p>
+<h4 id="wrap-reverse"><a href="#wrap-reverse" class="headerlink" title="wrap-reverse"></a>wrap-reverse</h4><p><img src="http://ombuy6inc.bkt.clouddn.com/flex7" alt="此处输入图片的描述"></p>
+<h3 id="flex-flow"><a href="#flex-flow" class="headerlink" title="flex-flow"></a>flex-flow</h3><blockquote>
 <p>flex-flow为flex-direction 和 flex-wrap 的简写,<br>默认值为row nowrap<br>flex-flow: flex-direction || flex-wrap;</p>
 </blockquote>
-<p>###justify-content</p>
-<blockquote>
+<h3 id="justify-content"><a href="#justify-content" class="headerlink" title="justify-content"></a>justify-content</h3><blockquote>
 <p>项目在主轴上的对齐方式。<br>justify-content: flex-start | flex-end | center | space-between | space-around;</p>
 <ul>
 <li>flex-start: 左对齐（默认）</li>
@@ -230,8 +225,7 @@
 </ul>
 </blockquote>
 <p><img src="http://ombuy6inc.bkt.clouddn.com/flex10" alt="此处输入图片的描述"></p>
-<p>###align-items</p>
-<blockquote>
+<h3 id="align-items"><a href="#align-items" class="headerlink" title="align-items"></a>align-items</h3><blockquote>
 <p>项目在交叉轴上的对齐方式<br>align-items: flex-start | flex-end | center | baseline | stretch;</p>
 <ul>
 <li>flex-start: 交叉轴起点对齐</li>
@@ -242,10 +236,8 @@
 </ul>
 </blockquote>
 <p><img src="http://ombuy6inc.bkt.clouddn.com/flex11" alt="此处输入图片的描述"></p>
-<p>####flex-diretion决定主轴的方向，justfy-content是在主轴上的齐方式，align-items 是在交叉轴上的对齐方式，因此它们之间是相互影响的。</p>
-<p><img src="http://ombuy6inc.bkt.clouddn.com/flex13" alt="此处输入图片的描述"></p>
-<p>###align-content</p>
-<blockquote>
+<h4 id="flex-diretion决定主轴的方向，justfy-content是在主轴上的齐方式，align-items-是在交叉轴上的对齐方式，因此它们之间是相互影响的。"><a href="#flex-diretion决定主轴的方向，justfy-content是在主轴上的齐方式，align-items-是在交叉轴上的对齐方式，因此它们之间是相互影响的。" class="headerlink" title="flex-diretion决定主轴的方向，justfy-content是在主轴上的齐方式，align-items 是在交叉轴上的对齐方式，因此它们之间是相互影响的。"></a>flex-diretion决定主轴的方向，justfy-content是在主轴上的齐方式，align-items 是在交叉轴上的对齐方式，因此它们之间是相互影响的。</h4><p><img src="http://ombuy6inc.bkt.clouddn.com/flex13" alt="此处输入图片的描述"></p>
+<h3 id="align-content"><a href="#align-content" class="headerlink" title="align-content"></a>align-content</h3><blockquote>
 <p>定义了多根轴线的对齐方式（项目只有一行，该属性不起作用）<br>align-content: flex-start | flex-end | center | space-between | space-around | stretch;</p>
 <ul>
 <li>flex-start：与交叉轴的起点对齐。</li>
@@ -256,8 +248,7 @@
 </ul>
 </blockquote>
 <p><img src="http://ombuy6inc.bkt.clouddn.com/flex14" alt="此处输入图片的描述"></p>
-<p>##项目的属性</p>
-<blockquote>
+<h2 id="项目的属性"><a href="#项目的属性" class="headerlink" title="项目的属性"></a>项目的属性</h2><blockquote>
 <ul>
 <li>order</li>
 <li>flex-grow</li>
@@ -267,40 +258,32 @@
 <li>align-self</li>
 </ul>
 </blockquote>
-<p>###order</p>
-<blockquote>
+<h3 id="order"><a href="#order" class="headerlink" title="order"></a>order</h3><blockquote>
 <p>定义项目的排列顺序（不必按照文档流的顺序）<br>order: (integer);<br>数值越小，排列越靠前，默认为0</p>
 </blockquote>
 <p><img src="http://ombuy6inc.bkt.clouddn.com/flex16" alt="此处输入图片的描述"></p>
-<p>###flex-grow</p>
-<blockquote>
-<p>定义项目的放大比例，默认为0（有剩空间时大小不变）</p>
+<h3 id="flex-grow"><a href="#flex-grow" class="headerlink" title="flex-grow"></a>flex-grow</h3><blockquote>
+<p>定义项目的放大比例，默认为0（有剩空间时大小不变）<br>flex-grow: <number>; /<em> default 0 </em>/</number></p>
 </blockquote>
-<p>flex-grow: <number>; /<em> default 0 </em>/</number></p>
 <p><img src="http://ombuy6inc.bkt.clouddn.com/flex17" alt="此处输入图片的描述"></p>
-<p>###flex-shrink</p>
-<blockquote>
+<h3 id="flex-shrink"><a href="#flex-shrink" class="headerlink" title="flex-shrink"></a>flex-shrink</h3><blockquote>
 <p>定义了项目的缩小比例，默认为1<br>flex-shrink: <number>; /<em> default 1 </em>/<br>如果为0时不变大小</number></p>
 </blockquote>
 <p><img src="http://ombuy6inc.bkt.clouddn.com/flex18" alt="此处输入图片的描述"></p>
-<p>###flex-basis</p>
-<blockquote>
+<h3 id="flex-basis"><a href="#flex-basis" class="headerlink" title="flex-basis"></a>flex-basis</h3><blockquote>
 <p>定义项目占据的主轴空间（main size）即固定大小相当于width,默认是auto.<br> flex-basis: (length) | auto; /<em> default auto </em>/</p>
 </blockquote>
 <p> <img src="http://ombuy6inc.bkt.clouddn.com/flex19" alt="此处输入图片的描述"></p>
 <p> 可能被其他flex属性所影响,如:flex-diretion</p>
 <p> <img src="http://ombuy6inc.bkt.clouddn.com/flex20" alt="此处输入图片的描述"></p>
-<p>###flex</p>
-<blockquote>
+<h3 id="flex"><a href="#flex" class="headerlink" title="flex"></a>flex</h3><blockquote>
 <p>flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。<br> flex: none  | [ &lt;’flex-grow’&gt; &lt;’flex-shrink’&gt;? || &lt;’flex-basis’&gt; ]<br> 两个快捷值:auto (1 1 auto) 和 none (0 0 auto)</p>
 </blockquote>
-<p>###align-self</p>
-<blockquote>
+<h3 id="align-self"><a href="#align-self" class="headerlink" title="align-self"></a>align-self</h3><blockquote>
 <p>定义单个项目在交叉轴的对齐方式，可覆盖align-items属性<br>取值和align-items一样：<br>align-self: auto | flex-start | flex-end | center | baseline | stretch;</p>
 </blockquote>
 <p><img src="http://ombuy6inc.bkt.clouddn.com/flex21" alt="此处输入图片的描述"></p>
-<p>参考来自</p>
-<ul>
+<h6 id="参考来自"><a href="#参考来自" class="headerlink" title="参考来自"></a>参考来自</h6><ul>
 <li><a href="http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool" target="_blank" rel="external">Flex 布局教程：语法篇</a></li>
 <li><a href="https://segmentfault.com/a/1190000008414812" target="_blank" rel="external">通过动图形象地为你介绍 flexbox 是如何工作的（一）</a></li>
 </ul>
@@ -326,6 +309,10 @@
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">布局</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
         		</li>
       		
 		</ul>
@@ -539,6 +526,10 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">前端</a>
               </li>
             
             <div class="clearfix"></div>
