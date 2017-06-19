@@ -152,6 +152,184 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-认识HTML" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/19/认识HTML/">HTML</a>
+    </h1>
+  
+
+        
+        <a href="/2017/06/19/认识HTML/" class="archive-article-date">
+  	<time datetime="2017-06-19T09:33:13.301Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="认识HTML"><a href="#认识HTML" class="headerlink" title="认识HTML"></a>认识HTML</h2><h3 id="html简介"><a href="#html简介" class="headerlink" title="html简介"></a>html简介</h3><p><img src="https://ooo.0o0.ooo/2017/06/19/5947962fd0ab8.jpg" alt="`此处输入图片的描述`"></p>
+<h4 id="什么是html"><a href="#什么是html" class="headerlink" title="什么是html"></a>什么是html</h4><blockquote>
+<p>HTML是一种<strong>标记语言（markup language）</strong>，浏览器识别html标记的内容并按照一定形式将内容显示出来。</p>
+</blockquote>
+<h4 id="html发展史"><a href="#html发展史" class="headerlink" title="html发展史"></a>html发展史</h4><p><img src="https://li-xinyang.gitbooks.io/frontend-notebook/content/img/H/html-history.png" alt="此处输入图片的描述"></p>
+<h3 id="html标签的语义化"><a href="#html标签的语义化" class="headerlink" title="html标签的语义化"></a>html标签的语义化</h3><blockquote>
+<p>语义化（Semantic Tag）是指用合适的标签标识适当的内容，它可以起到搜索引擎优化提高可访问性（例如盲人使用的屏幕阅读器），与此同时还可以提高代码的可读性。简而言之也就是在正确的地方使用正确的标签</p>
+</blockquote>
+<h4 id="html基本结构"><a href="#html基本结构" class="headerlink" title="html基本结构"></a>html基本结构</h4><p><img src="https://ooo.0o0.ooo/2017/06/19/59476ea2ee8b2.png" alt="此处输入图片的描述"></p>
+<h4 id="html5页面结构"><a href="#html5页面结构" class="headerlink" title="html5页面结构"></a>html5页面结构</h4><p><img src="https://li-xinyang.gitbooks.io/frontend-notebook/content/img/S/structure.gif" alt="此处输入图片的描述"></p>
+<h4 id="html常用标签"><a href="#html常用标签" class="headerlink" title="html常用标签"></a>html常用标签</h4><blockquote>
+<p>div, span,h1~h6,p,strong,em<br>ul(无序）,ol（有序）,li, dl, dt, dd<br>q,blockqoute,hr,a,img<br>pre(会保留换行和空格，常与code一同使用),code,del<br>&amp;nbsp(空格）</p>
+</blockquote>
+<h5 id="a标签"><a href="#a标签" class="headerlink" title="a标签"></a>a标签</h5><pre><code>&lt;!-- 默认超链接  --&gt;
+&lt;a href=&quot;http://sample-link.com&quot; title=&quot;Sample Link&quot;&gt;Sample&lt;/a&gt;
+&lt;!-- 当前窗口显示 --&gt;
+&lt;a href=&quot;http://sample-link.com&quot; title=&quot;Sample Link&quot;        target=&quot;_self&quot;&gt;Sample&lt;/a&gt;
+&lt;!-- 新窗口显示 --&gt;
+&lt;a href=&quot;http://sample-link.com&quot; title=&quot;Sample Link&quot; target=&quot;_blank&quot;&gt;Sample&lt;/a&gt;
+&lt;!-- iframe 中打开链接 --&gt;
+&lt;a href=&quot;http://sample-link.com&quot; title=&quot;Sample Link&quot; target=&quot;iframe-name&quot;&gt;Sample&lt;/a&gt;
+&lt;iframe name=&quot;iframe-name&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+&lt;!-- 页面中的锚点 --&gt;
+&lt;a href=&quot;#achor&quot;&gt;Achor Point&lt;/a&gt;
+&lt;section id=&quot;achor&quot;&gt;Achor Content&lt;/section&gt;
+
+&lt;!-- 邮箱及电话需系统支持 --&gt;
+&lt;a href=&quot;mailto:sample-address@me.com&quot; title=&quot;Email&quot;&gt;Contact Us&lt;/a&gt;
+&lt;!-- 多个邮箱地址 --&gt;
+&lt;a href=&quot;mailto:sample-address@me.com, sample-address0@me.com&quot; title=&quot;Email&quot;&gt;Contact Us&lt;/a&gt;
+&lt;!-- 添加抄送，主题和内容 --&gt;
+&lt;a href=&quot;mailto:sample-address@me.com?cc=admin@me.com&amp;subject=Help&amp;body=sample-body-text&quot; title=&quot;Email&quot;&gt;Contact Us&lt;/a&gt;
+
+&lt;!-- 电话示例 --&gt;
+&lt;a href=&quot;tel:99999999&quot; title=&quot;Phone&quot;&gt;Ring Us&lt;/a&gt;
+</code></pre><h5 id="pre（保留原格式）与code（代码编写）"><a href="#pre（保留原格式）与code（代码编写）" class="headerlink" title="pre（保留原格式）与code（代码编写）"></a>pre（保留原格式）与code（代码编写）</h5><pre><code>&lt;pre&gt;
+    &lt;code&gt;
+    &lt;dl&gt;
+        &lt;dt&gt;姓名&lt;/dt&gt;
+        &lt;dd&gt;小明&lt;/dd&gt;
+        &lt;dt&gt;作品&lt;/dt&gt;
+        &lt;dd&gt;《论Web的在未来领域的影响》&lt;/dd&gt;
+        &lt;dd&gt;《论如何成为Web大神》&lt;/dd&gt;
+    &lt;/dl&gt;
+    &lt;/code&gt;
+&lt;pre&gt;
+</code></pre><h5 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h5><pre><code>&lt;table border=&quot;1&quot;&gt;
+    &lt;caption&gt;表格名称或描述&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;header&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th rowspan=&quot;2&quot;&gt;姓别&lt;/th&gt; &lt;!--跨2行--&gt;
+            &lt;td&gt;男&lt;/td&gt;
+            &lt;th colspan=&quot;2&quot;&gt;6&lt;/th&gt; &lt;!--跨2列--&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;女&lt;/td&gt;
+            &lt;td&gt;2*3&lt;/td&gt;
+            &lt;td&gt;1*6&lt;/td&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre><h5 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h5><pre><code>&lt;form method=&quot;post&quot; action=&quot;save.php&quot;&gt;
+
+    &lt;!--输入框--&gt;
+    &lt;label for=&quot;email&quot;&gt;邮箱：&lt;/label&gt; &lt;!--利用label来快速激活相应条目--&gt;
+    &lt;input id=&quot;email&quot; type=&quot;email&quot; name=&quot;email&quot;&gt;
+    &lt;label for=&quot;pass1&quot;&gt;密码：&lt;/label&gt;
+    &lt;input id=&quot;pass1&quot; type=&quot;password&quot; name=&quot;pass&quot;&gt;
+
+    &lt;!--单选框--&gt;
+    &lt;span&gt;姓别：&lt;/span&gt;
+    &lt;label for=&quot;male&quot;&gt;男&lt;/label&gt;
+    &lt;input id=&quot;male&quot; type=&quot;radio&quot; checked=&quot;checked&quot; value=&quot;male&quot; name=&quot;gender&quot;&gt;
+    &lt;label for=&quot;female&quot;&gt;女&lt;/label&gt;
+    &lt;input id=&quot;female&quot; type=&quot;radio&quot; value=&quot;female&quot; name=&quot;gender&quot;&gt;
+    注：name的值必须一样
+
+    &lt;!--下拉列表框--&gt;
+    &lt;span&gt;城市：&lt;/span&gt;
+        &lt;select&gt;
+            &lt;option value=&quot;北京&quot;selected=&quot;selected&quot;&gt;北京&lt;/option&gt;
+            &lt;option value=&quot;上海&quot;&gt;上海&lt;/option&gt;
+            &lt;option value=&quot;广西&quot;&gt;广西&lt;/option&gt;
+            &lt;option value=&quot;广东&quot;&gt;广东&lt;/option&gt;
+        &lt;/select&gt;
+
+    &lt;!--复选框--&gt;
+    &lt;span&gt;爱好:&lt;/span&gt;
+        &lt;input id=&quot;sport&quot; type=&quot;checkbox&quot; value=&quot;sport&quot; name=&quot;hobby&quot;&gt;
+        &lt;label for=&quot;sport&quot;&gt;运动&lt;/label&gt;
+        &lt;input id=&quot;art&quot; type=&quot;checkbox&quot; value=&quot;science&quot; name=&quot;hobby&quot;&gt;
+        &lt;label for=&quot;art&quot;&gt;艺术&lt;/label&gt;
+        &lt;input id=&quot;science&quot; type=&quot;checkbox&quot; value=&quot;science&quot; name=&quot;hobby&quot;&gt;
+        &lt;label for=&quot;science&quot;&gt;科学&lt;/label&gt;
+
+    &lt;!--多行文本输入--&gt;
+    &lt;span&gt;个人介绍：&lt;/span&gt;
+        &lt;textarea rows=&quot;10&quot; cols=&quot;40&quot; placeholder=&quot;请输入你的个人描述....&quot;&gt;
+        &lt;/textarea&gt;   &lt;!--placeholder的值在标签被聚焦时消失--&gt;
+
+    &lt;input type=&quot;submit&quot; value=&quot;提交&quot;&gt;
+    &lt;input type=&quot;reset&quot; value=&quot;重置&quot;&gt;
+
+&lt;/form&gt;
+</code></pre><h6 id="实用网站"><a href="#实用网站" class="headerlink" title="实用网站"></a>实用网站</h6><ul>
+<li><a href="http://www.caniuse.com/#home" target="_blank" rel="external">html标签兼容性检测</a></li>
+<li><a href="http://www.w3school.com.cn/html/" target="_blank" rel="external">w3school</a></li>
+</ul>
+<h6 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h6><ul>
+<li><a href="https://li-xinyang.gitbooks.io/frontend-notebook/content/chapter1/03_html.html" target="_blank" rel="external">前端开发笔记本</a></li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ife</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/06/19/认识HTML/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
     <article id="post-vim插件的常用功能写法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -365,77 +543,10 @@
 
 
   
-    <article id="post-markdown的常用语法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/20/markdown的常用语法/">关于markdown的常用语法</a>
-    </h1>
-  
-
-        
-        <a href="/2017/04/20/markdown的常用语法/" class="archive-article-date">
-  	<time datetime="2017-04-20T05:25:32.445Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="http://ombuy6inc.bkt.clouddn.com/markdown.png" alt="此处输入图片的描述"></p>
-<h1 id="markdown的常用语法"><a href="#markdown的常用语法" class="headerlink" title="markdown的常用语法"></a>markdown的常用语法</h1><h3 id="1、粗体与斜体"><a href="#1、粗体与斜体" class="headerlink" title="1、粗体与斜体"></a>1、粗体与斜体</h3><blockquote>
-<p>使用*(斜体)和**(粗体)来包围文字</p>
-</blockquote>
-<h3 id="2、分级标题"><a href="#2、分级标题" class="headerlink" title="2、分级标题"></a>2、分级标题</h3><blockquote>
-<p>标题前添加#，# 表示一级标题，## 表示二级标题，以此类推</p>
-</blockquote>
-        
-          <a class="article-more-a" href="/2017/04/20/markdown的常用语法/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技能</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/04/20/markdown的常用语法/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
@@ -569,6 +680,14 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">photoshop</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">ife</a>
               </li>
             
             <div class="clearfix"></div>
